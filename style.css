@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.star{
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+}
