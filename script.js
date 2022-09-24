@@ -7,13 +7,15 @@ function randomN(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-for(let i=0; i<=1000; i++){
+let nb = (window.innerHeight+window.innerWidth)/3;
+
+for(let i=0; i<=nb; i++){
     let star = document.createElement('div');
     let size = randomN(1,4);
     star.classList.add('star');
     star.style.width = size+"px";
     star.style.height = size+"px";
-    star.style.top = randomN(0,932)+"px";
-    star.style.right = randomN(0,1920)+"px";
+    star.style.top = randomN(0,window.innerHeight)+"px";
+    star.style.right = randomN(0,window.innerWidth)+"px";
     document.body.appendChild(star);
 }
